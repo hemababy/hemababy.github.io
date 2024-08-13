@@ -1,20 +1,217 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<title>Sekar Portfolio</title>-->
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
+<!--<style>-->
+<!--body,h1,h2,h3,h4,h5 {font-family: "Montserrat", sans-serif-->
+<!--}-->
+<!--.w3-quarter img{margin-bottom: -6px; cursor: pointer}-->
+<!--.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}-->
+
+<!--</style>-->
+<!--<script>-->
+<!--    // Script to open and close sidebar-->
+<!--    function w3_open() {-->
+<!--        document.getElementById("mySidebar").style.display = "block";-->
+<!--        document.getElementById("myOverlay").style.display = "block";-->
+<!--    }-->
+
+<!--    function w3_close() {-->
+<!--        document.getElementById("mySidebar").style.display = "none";-->
+<!--        document.getElementById("myOverlay").style.display = "none";-->
+<!--    }-->
+
+<!--    // Modal Image Gallery-->
+<!--    function onClick(element) {-->
+<!--        document.getElementById("img01").src = element.src;-->
+<!--        document.getElementById("modal01").style.display = "block";-->
+<!--        var captionText = document.getElementById("caption");-->
+<!--        captionText.innerHTML = element.alt;-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"-->
+<!--        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="-->
+<!--        crossOrigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--</script>-->
+
+<!--</head>-->
+<!--<body class="w3-light-grey">-->
+
+<!--&lt;!&ndash;include header and navigation&ndash;&gt;-->
+<!--<div id="headerpage"></div>-->
+<!--<div id="navpage"></div>-->
+
+<!--<div class="content">-->
+<!--        <h1>Hemalatha Sekar</h1>-->
+<!--        <p>Software Engineer, Data Scientist Enthusiast</p>-->
+<!--        <div class="circle">-->
+<!--            <img src="/assests/images/avatargif.gif" alt="Waving GIF">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--<div id="aboutpage"></div>-->
+<!--<div id="portfolio"></div>-->
+<!--<div id="contactpage"></div>-->
+<!--<div id="footerpage"></div>-->
+<!--</body>-->
+
+<!--<script type="text/javascript">-->
+<!--    $('#headerpage').load('/_includes/header.html');-->
+<!--    $('#navpage').load('/_includes/nav.html');-->
+<!--    // $('#homepage').load('/home.html');-->
+<!--    $('#aboutpage').load('/about.html')-->
+<!--    $('#portfolio').load('/portfolio.html')-->
+<!--    $('#contactpage').load('/contact.html')-->
+<!--    $('#footerpage').load('/footer.html')-->
+<!--</script>-->
+
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Hemalatha Sekar Portfolio</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <title>Sekar Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Montserrat", sans-serif}
+        .w3-quarter img{margin-bottom: -6px; cursor: pointer}
+        .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+        /* Background GIF */
+        body {
+            background: url('/assests/images/grey.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+            top: 20%;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto;
+            animation: popUp 2s ease-in-out;
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes popUp {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossOrigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-  {% include header.html %}
-  {% include navigation.html %}
-  <section>
-    <h2>Welcome to My Portfolio</h2>
-    <p>Enthusiastic and dedicated Data Science professional with over 2 years of hands-on experience...</p>
-    <a href="{{ site.baseurl }}/projects.html">View My Projects</a>
-    <a href="{{ site.baseurl }}/resume.html">Download My Resume</a>
-  </section>
-  {% include footer.html %}
+<body class="w3-light-grey">
+
+<!--include header and navigation-->
+<div id="headerpage"></div>
+<div id="navpage"></div>
+
+<!--<div class="content">-->
+<!--    </br>-->
+<!--    </br>-->
+<!--    <h1 style="font-weight: bold; color: black;">Hemalatha Sekar</h1>-->
+<!--    <p style="font-weight: bold; color: black;">Software Engineer, Data Scientist Enthusiast</p>-->
+<!--    <div class="circle" style="width: 195px; height: 195px; border-radius: 50%; overflow: hidden; margin: 20px auto; animation: popUp 2s ease-in-out;">-->
+<!--        <img src="/assests/images/avatargif.gif" alt="Waving GIF">-->
+<!--    </div>-->
+<!--</div>-->
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+<div class="content" style="text-align: center; color: white; z-index: 2; position: relative; top: 20%; margin-top: 100px;">
+    <h1 style="font-weight: bold; color: black;">Hemalatha Sekar</h1>
+    <p style="font-weight: bold; color: black;">Software Engineer, Data Scientist Enthusiast</p>
+    <div class="circle" style="width: 195px; height: 195px; border-radius: 50%; overflow: hidden; margin: 20px auto; animation: popUp 2s ease-in-out;">
+        <img src="/assests/images/avatargif.gif" alt="Waving GIF" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <p>Welcome to my creative space! Dive into my projects, and
+        let's connect to discuss how I can bring value to your next big endeavor.
+        I’m passionate about transforming data into actionable insights and
+        designing intuitive web experiences. With a deep enthusiasm for data science
+        and web development, I’m excited to collaborate and help you achieve
+        remarkable results in your upcoming projects.
+    </p>
+</div>
+</div>
+
+<div id="portfolio"></div>
+<div id="aboutpage"></div>
+<div id="contactpage"></div>
+<div id="footerpage"></div>
+
+<script type="text/javascript">
+    $('#headerpage').load('/_includes/header.html');
+    $('#navpage').load('/_includes/nav.html');
+    $('#aboutpage').load('/about.html')
+    $('#portfolio').load('/portfolio.html')
+    $('#contactpage').load('/contact.html')
+    $('#footerpage').load('/_includes/footer.html')
+</script>
+
 </body>
 </html>
