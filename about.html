@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Hemalatha Sekar Portfolio</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>About</title>
 </head>
 <body>
-  {% include header.html %}
-  {% include navigation.html %}
-  <section>
-    <h2>About Me</h2>
-    <p>As a passionate Software Developer with over 2 years of experience, I thrive on creating innovative
+    {% include navigation.html %}
+    <div class="about-section">
+        <h1>About Me</h1>
+        <p>As a passionate Software Developer with over 2 years of experience, I thrive on creating innovative
         IT solutions that optimize business processes. Proficient in Java and Python, I have a proven
         track record of enhancing system efficiency and user engagement.
         My tenure at Tata Consultancy Services honed my skills in developing secure, scalable web applications,
@@ -19,7 +18,16 @@
         I’m enthusiastic about leveraging AI and machine learning to drive innovation and solve complex problems.
         Fluent in English and currently learning intermediate German, I excel in collaborative, interdisciplinary environments.
         Let's connect and explore how I can contribute to your next big project!</p>
-  </section>
-  {% include footer.html %}
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>My Projects</h2>
+            <p>Some description of the projects.</p>
+            <a href="https://github.com/yourusername/yourproject1"><img src="assets/images/project1.png" alt="Project 1" style="width:100%"></a>
+            <a href="https://github.com/yourusername/yourproject2"><img src="assets/images/project2.png" alt="Project 2" style="width:100%"></a>
+        </div>
+    </div>
+    {% include footer.html %}
 </body>
 </html>
