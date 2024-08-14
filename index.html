@@ -1,78 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--<title>Sekar Portfolio</title>-->
-<!--<meta charset="UTF-8">-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">-->
-<!--<style>-->
-<!--body,h1,h2,h3,h4,h5 {font-family: "Montserrat", sans-serif-->
-<!--}-->
-<!--.w3-quarter img{margin-bottom: -6px; cursor: pointer}-->
-<!--.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}-->
-
-<!--</style>-->
-<!--<script>-->
-<!--    // Script to open and close sidebar-->
-<!--    function w3_open() {-->
-<!--        document.getElementById("mySidebar").style.display = "block";-->
-<!--        document.getElementById("myOverlay").style.display = "block";-->
-<!--    }-->
-
-<!--    function w3_close() {-->
-<!--        document.getElementById("mySidebar").style.display = "none";-->
-<!--        document.getElementById("myOverlay").style.display = "none";-->
-<!--    }-->
-
-<!--    // Modal Image Gallery-->
-<!--    function onClick(element) {-->
-<!--        document.getElementById("img01").src = element.src;-->
-<!--        document.getElementById("modal01").style.display = "block";-->
-<!--        var captionText = document.getElementById("caption");-->
-<!--        captionText.innerHTML = element.alt;-->
-<!--    }-->
-<!--</script>-->
-
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"-->
-<!--        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="-->
-<!--        crossOrigin="anonymous" referrerpolicy="no-referrer"></script>-->
-<!--</script>-->
-
-<!--</head>-->
-<!--<body class="w3-light-grey">-->
-
-<!--&lt;!&ndash;include header and navigation&ndash;&gt;-->
-<!--<div id="headerpage"></div>-->
-<!--<div id="navpage"></div>-->
-
-<!--<div class="content">-->
-<!--        <h1>Hemalatha Sekar</h1>-->
-<!--        <p>Software Engineer, Data Scientist Enthusiast</p>-->
-<!--        <div class="circle">-->
-<!--            <img src="/assests/images/avatargif.gif" alt="Waving GIF">-->
-<!--        </div>-->
-<!--    </div>-->
-
-
-<!--<div id="aboutpage"></div>-->
-<!--<div id="portfolio"></div>-->
-<!--<div id="contactpage"></div>-->
-<!--<div id="footerpage"></div>-->
-<!--</body>-->
-
-<!--<script type="text/javascript">-->
-<!--    $('#headerpage').load('/_includes/header.html');-->
-<!--    $('#navpage').load('/_includes/nav.html');-->
-<!--    // $('#homepage').load('/home.html');-->
-<!--    $('#aboutpage').load('/about.html')-->
-<!--    $('#portfolio').load('/portfolio.html')-->
-<!--    $('#contactpage').load('/contact.html')-->
-<!--    $('#footerpage').load('/footer.html')-->
-<!--</script>-->
-
-<!--</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body,h1,h2,h3,h4,h5 {font-family: "Montserrat", sans-serif}
         .w3-quarter img{margin-bottom: -6px; cursor: pointer}
         .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
 
-        /* Background GIF */
+
         body {
             background: url('/assests/images/grey.jpg') no-repeat center center fixed;
             background-size: cover;
@@ -206,10 +132,11 @@
 
 <script type="text/javascript">
     $('#headerpage').load('/_includes/header.html');
-    $('#navpage').load('/_includes/nav.html');
+    $('#navpage').load('/_includes/navigation.html');
     $('#aboutpage').load('/about.html')
     $('#portfolio').load('/portfolio.html')
     $('#contactpage').load('/contact.html')
+    $('#homepage').load('/index.html')
     $('#footerpage').load('/_includes/footer.html')
 </script>
 
