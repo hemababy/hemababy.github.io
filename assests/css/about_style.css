@@ -1,0 +1,93 @@
+
+body, h1, h2, h3, h4, h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff; /* White color for text */
+}
+
+body {
+    background-color: #000000; /* Black background */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px; /* Ensure the image doesn't get too small */
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+    padding-left: 40px;
+    color: #ffffff; /* White text color */
+}
+
+#about {
+    background-color: #000000; /* Black background */
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Animated Skill Bars */
+.skill-bar {
+    background-color: #333333; /* Dark background for the skill bar */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar-fill {
+    background-color: #f19d54; /* Warm orange color for the fill */
+    height: 20px;
+    line-height: 20px;
+    color: #000000; /* Black text inside the skill bar */
+    text-align: right;
+    padding-right: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 0 0 5px;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.skill-bar:hover .skill-bar-fill {
+    width: 100%; /* Fills up the bar on hover */
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #cccccc; /* Light grey color for paragraphs */
+}
+
+hr.w3-opacity {
+    border-color: #666666; /* Grey color for horizontal lines */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-text {
+        padding-left: 0;
+    }
+}
