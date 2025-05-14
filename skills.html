@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assests/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Hemalatha Sekar Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assests/css/main.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .section {
+      padding: 4rem 0;
+    }
+    .skill-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .skill-icon {
+      font-size: 2rem;
+      color: #6610f2;
+      margin-bottom: 1rem;
+    }
+    .progress {
+      height: 20px;
+      border-radius: 50px;
+    }
+  </style>
+
+  <div id="navbar-placeholder"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $("#navbar-placeholder").load("_includes/header.html");
+</script>
 </head>
 <body>
+  <section class="section container">
+    <h2 class="text-center mb-5">My Skillset & Focus Areas</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="skill-card text-start">
+          <h5 class="mb-3"><i class="fab fa-python skill-icon"></i> Python for Data Science</h5>
+          <p>I use Python daily for EDA, data cleaning, model training, and automation. Libraries like pandas, NumPy, scikit-learn, and Streamlit are my go-to tools.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 95%">95%</div></div>
 
-<div class="skills-section">
-    <h1>Areas of Interest</h1>
-    <p>A glimpse into the heart of my craft, where passion meets purpose.</p>
-    <div class="skills-grid">
-        <div class="skill-item">
-            <i class="fa fa-id-card-o"></i>
-            <h4>Web Development</h4>
-            <p>I've worked on both front-end and back-end development, as well as middleware,
-                creating seamless and dynamic web applications. My experience covers the entire
-                web stack, delivering complete, responsive solutions.</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa fa-commenting"></i>
-            <h4>NLP</h4>
-            <p>I have worked to apply NLP techniques uncovering the nuances and motivations behind human interactions.</p>
-        </div>
+          <h5 class="mb-3"><i class="fas fa-database skill-icon"></i> SQL</h5>
+          <p>I write efficient queries using PostgreSQL and MySQL. I enjoy working with joins, subqueries, and window functions to uncover insights from relational data.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 90%">90%</div></div>
 
-        <div class="skill-item">
-            <i class="fa fa-gears"></i>
-            <h4>Machine Learning</h4>
-            <p>My work demonstrates a strong grasp of both the theoretical foundations and the practical applications,
-                deepened my enthusiasm for exploring the endless possibilities within the field.</p>
-        </div>
-        <div class="about-image">
-            <img src="/assests/gifs/world.gif" alt="Waving GIF">
-        </div>
-        <div class="skill-item">
-            <i class="fa fa-code-fork"></i>
-            <h4>Deep Learning</h4>
-            <p>I've worked with deep learning techniques to build models that can learn and make decisions from vast amounts of data.</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa fa-bar-chart"></i>
-            <h4>Statistics</h4>
-            <p> My passion for statistics drives me to transform numbers into actionable, impactful decisions.</p>
-        </div>
-        <div class="skill-item">
-            <i class="fa fa-area-chart"></i>
-            <h4>Data Analytics</h4>
-            <p>Data analytics is where my passion meets precision—transforming raw data into meaningful insights that tell a powerful story. </p>
-        </div>
+          <h5 class="mb-3"><i class="fas fa-code skill-icon"></i> Full Stack Development</h5>
+          <p>I’ve developed end-to-end applications using JAVA, MySql(Backend), HTML/CSS/JS (frontend), and integrated REST APIs. My projects often combine dashboards with real-time logic.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-warning" style="width: 88%">88%</div></div>
 
+          <h5 class="mb-3"><i class="fab fa-docker skill-icon"></i> Docker & Dev Tools</h5>
+          <p>I containerize Python applications using Docker and manage reproducible environments for ML models and apps. I also use GitHub for version control and collaboration.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-dark" style="width: 80%">80%</div></div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="skill-card text-start">
+          <h5 class="mb-3"><i class="fas fa-brain skill-icon"></i> Machine Learning (scikit-learn, XGBoost)</h5>
+          <p>I’ve built classification, regression, and clustering models using scikit-learn, XGBoost, and LightGBM. I regularly fine-tune hyperparameters and evaluate performance using cross-validation.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-info" style="width: 92%">92%</div></div>
+
+          <h5 class="mb-3"><i class="fas fa-language skill-icon"></i> NLP (spaCy, Transformers)</h5>
+          <p>I enjoy working on text data — from preprocessing to training Transformer-based models. I've developed sentiment classifiers, intent detectors, and a contextual chatbot.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-secondary" style="width: 90%">90%</div></div>
+
+          <h5 class="mb-3"><i class="fas fa-chart-pie skill-icon"></i> Data Visualization & Storytelling</h5>
+          <p>I create intuitive visuals using Power BI, Matplotlib, and Plotly. I focus on helping stakeholders interpret findings clearly, not just showing numbers.</p>
+          <div class="progress mb-3"><div class="progress-bar bg-danger" style="width: 88%">88%</div></div>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
