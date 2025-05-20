@@ -1,55 +1,312 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hemalatha Sekar | Data Scientist Portfolio</title>
-
-  <!-- Fonts & Meta -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assests/css/main.css" />
-
+  <title>Hemalatha Sekar Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- Animated SVG Background -->
-  <div class="animated-blobs">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-      <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#84fab0;" />
-          <stop offset="100%" style="stop-color:#8fd3f4;" />
-        </linearGradient>
-      </defs>
-      <circle cx="50" cy="50" r="45" fill="url(#grad1)">
-        <animate attributeName="r" values="45;50;45" dur="10s" repeatCount="indefinite"/>
-      </circle>
-    </svg>
-  </div>
-
- <div id="navbar-placeholder"></div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $("#navbar-placeholder").load("_includes/header.html");
-</script>
-
-  <!-- HERO SECTION -->
-  <section id="home" class="hero section" data-aos="fade-up">
-  <div class="profile-image">
-    <img src="assests/images/hehema.JPG" alt="Hemalatha Sekar" />
-  </div>
-  <h1>Hello, I’m <span class="highlight">Hemalatha Sekar</span></h1>
-  <h2 id="typewriter"></h2>
-  <div class="cta-buttons">
-      <a href="portfolio.html" class="btn-primary">See My Projects</a>
-      <a href="https://www.linkedin.com/in/hemalathatech/" target="_blank" class="btn-secondary">Connect on LinkedIn</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Hemalatha Sekar</b> Portfolio</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#skills" class="w3-bar-item w3-button">Skills</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section" style="position: relative; height: 100vh; overflow: hidden;">
+  <!-- Background GIF -->
+  <img src="assests/images/pattern.gif" alt="Background"
+       style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1; top: 0; left: 0;" />
+
+  <!-- Overlay content (left-aligned) -->
+  <div class="w3-display-container" style="height: 100%;">
+    <div style="
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: #fff;
+      text-align: left;
+      max-width: 500px;
+    ">
+      <img src="assests/images/hehema.JPG" alt="Hemalatha Sekar"
+           style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.2); margin-bottom: 20px;">
+      <h1 class="w3-xxlarge" style="margin: 0;">Hello, I’m Hemalatha Sekar</span></h1>
+      <p id="typewriter" class="w3-large" style="color: #ccc;">I build full-stack solutions</p>
+      <div style="margin-top: 20px;">
+<!--        <a href="#projects" class="w3-button w3-blue w3-margin-right">See My Projects</a>-->
+        <a href="#projects" class="w3-button" style="background-color: #7dd1f2; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-right: 10px;">See My Projects</a>
+        <a href="https://www.linkedin.com/in/hemalathatech/" class="w3-button w3-white w3-border" target="_blank">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-  <!-- Scripts -->
-  <script src="assests/scripts/main.js"></script>
+
+
+
+
+<!-- Projects Section -->
+<div class="w3-container w3-padding" id="projects">
+  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">My Projects</h2>
+
+  <div class="w3-row-padding w3-margin-top">
+
+    <!-- Project 1 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/churn_analysis.png" alt="Customer Churn" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Customer Churn Prediction</b></h4>
+          <p>Used XGBoost and Logistic Regression to predict churn. Visualized SHAP values to explain model decisions.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalytics_BI" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/Spam_classification_RF.png" alt="Spam Classification" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Spam Classification</b></h4>
+          <p>Trained a Random Forest classifier using TF-IDF features for spam detection. Achieved 95% precision.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/Spam_Classification/" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/cnn_metrics.png" alt="CNN" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>CNN for X-ray Classification</b></h4>
+          <p>Built and evaluated CNN models for pseudo X-ray image interpretation using PyTorch.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/healthcare_trends" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/hr_analytics.png" alt="HR Analytics" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>HR Analytics & Attrition Risk</b></h4>
+          <p>Predicted employee attrition using ML. Included correlation and feature importance analysis.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalytics_BI/tree/main/HR%20Analytics" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/bank_marketing.png" alt="Bank Marketing" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Bank Marketing Campaign</b></h4>
+          <p>Analyzed success metrics of marketing calls using Logistic Regression and Decision Trees.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/Bank-Marketing/tree/main" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/sales_report.png" alt="Sales Dashboard" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Sales Insights Dashboard</b></h4>
+          <p>Built interactive Power BI dashboards with KPIs and drill-down analysis by region.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalytics_BI/tree/main/Sales_Report" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/call_center_dashboard.png" alt="Call Center" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Call Center Analytics</b></h4>
+          <p>Created a BI dashboard highlighting key operational metrics and agent performance.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalytics_BI/tree/main/Call%20Center%20Analytics" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/diversity_and_inclusion.png" alt="Diversity" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Diversity & Inclusion Insights</b></h4>
+          <p>Visualized diversity indicators across departments. Helped drive equitable decisions.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalytics_BI/tree/main/DIVERSITY%20AND%20INCLUSION" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="assests/images/pairplot.png" alt="Census Analysis" style="width: 600px; height: 250px; object-fit: cover;">
+        <div class="w3-container">
+          <h4><b>Census Data Analysis</b></h4>
+          <p>Explored and visualized census demographics. Created pairplots to observe feature relationships.</p>
+          <a class="w3-button w3-blue w3-small w3-margin-bottom" href="https://github.com/hemababy/DataAnalysis_Python/tree/main/DescriptiveAnalysisOfCensusData" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- About Section -->
+<div class="w3-container w3-padding-64" id="about">
+  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h2>
+
+  <div class="w3-row-padding w3-padding-32">
+    <!-- Image -->
+    <div class="w3-col l6 m12 w3-center">
+      <img src="assests/images/girl_work.png" alt="Hemalatha Working" style="max-width:50%; border-radius: 12px;">
+    </div>
+
+    <!-- Text -->
+    <div class="w3-col l6 m12">
+      <h3 class="w3-text-black w3-margin-top">Hemalatha Sekar</h3>
+      <p>
+        As a passionate <strong>Software Developer</strong> and <strong>Data Scientist</strong>, I thrive on creating intelligent solutions that blend engineering and analytics.
+        With 2+ years of experience in both frontend/backend development and a strong foundation in Python, Java, and machine learning,
+        I bring a unique fusion of design thinking and scientific problem-solving to every project I work on.
+      </p>
+      <p>
+        I am especially enthusiastic about <strong>Natural Language Processing</strong>, <strong>AI ethics</strong>, and <strong>interactive dashboards</strong> that tell compelling data stories.
+        Let’s collaborate on creating something impactful!
+      </p>
+
+      <h4 class="w3-margin-top w3-border-bottom w3-border-light-grey w3-padding-small">Core Competencies</h4>
+      <ul class="w3-ul w3-white">
+        <li><i class="fa fa-check w3-text-blue w3-margin-right"></i>Machine Learning & AI</li>
+        <li><i class="fa fa-check w3-text-blue w3-margin-right"></i>Web Application Development (Python, Flask, JS)</li>
+        <li><i class="fa fa-check w3-text-blue w3-margin-right"></i>Data Visualization & BI (Power BI, Tableau)</li>
+        <li><i class="fa fa-check w3-text-blue w3-margin-right"></i>Natural Language Processing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Skills -->
+<!-- Skills Section -->
+<div class="w3-container w3-padding-64" id="skills">
+  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">My Skillset & Focus Areas</h2>
+
+  <div class="w3-row-padding">
+    <!-- Left Column -->
+    <div class="w3-half">
+      <h4><i class="fa fa-code w3-margin-right w3-text-deep-purple"></i> Python for Data Science</h4>
+      <p>I use Python daily for EDA, data cleaning, model training, and automation. Libraries like pandas, NumPy, scikit-learn, and Streamlit are my go-to tools.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-blue w3-round-xlarge" style="width:95%">95%</div></div>
+
+      <h4><i class="fa fa-database w3-margin-right w3-text-indigo"></i> SQL</h4>
+      <p>I write efficient queries using PostgreSQL and MySQL. I enjoy working with joins, subqueries, and window functions to uncover insights from relational data.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-green w3-round-xlarge" style="width:90%">90%</div></div>
+
+      <h4><i class="fa fa-laptop-code w3-margin-right w3-text-orange"></i> Full Stack Development</h4>
+      <p>I’ve developed end-to-end applications using JAVA, MySql(Backend), HTML/CSS/JS (frontend), and integrated REST APIs. My projects often combine dashboards with real-time logic.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-amber w3-round-xlarge" style="width:88%">88%</div></div>
+
+      <h4><i class="fa fa-cogs w3-margin-right w3-text-gray"></i> Docker & Dev Tools</h4>
+      <p>I containerize Python applications using Docker and manage reproducible environments for ML models and apps. I also use GitHub for version control and collaboration.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-dark-grey w3-round-xlarge" style="width:80%">80%</div></div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-half">
+      <h4><i class="fa fa-robot w3-margin-right w3-text-cyan"></i> Machine Learning (scikit-learn, XGBoost)</h4>
+      <p>I’ve built classification, regression, and clustering models using scikit-learn, XGBoost, and LightGBM. I regularly fine-tune hyperparameters and evaluate performance using cross-validation.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-teal w3-round-xlarge" style="width:92%">92%</div></div>
+
+      <h4><i class="fa fa-language w3-margin-right w3-text-purple"></i> NLP (spaCy, Transformers)</h4>
+      <p>I enjoy working on text data — from preprocessing to training Transformer-based models. I've developed sentiment classifiers, intent detectors, and a contextual chatbot.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-black w3-round-xlarge" style="width:90%">90%</div></div>
+
+      <h4><i class="fa fa-chart-pie w3-margin-right w3-text-red"></i> Data Visualization & Storytelling</h4>
+      <p>I create intuitive visuals using Power BI, Matplotlib, and Plotly. I focus on helping stakeholders interpret findings clearly, not just showing numbers.</p>
+      <div class="w3-light-grey w3-round-xlarge w3-small"><div class="w3-container w3-red w3-round-xlarge" style="width:94%">94%</div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-64" id="contact">
+  <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h2>
+  <p>I'm always open to collaborating, mentoring, or answering questions related to data science, development, or career transitions. Drop me a message below or email me directly at <a href="mailto:hematechie@gmail.com">hematechie@gmail.com</a>.</p>
+
+  <form action="https://formspree.io/f/mwkgvzqw" method="POST" class="w3-container w3-card-4 w3-light-grey w3-padding-32 w3-margin-top">
+    <label for="name"><b>Name</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" name="name" placeholder="Your name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="email" name="email" placeholder="Your email" required>
+
+    <label for="message"><b>Message</b></label>
+    <textarea class="w3-input w3-border w3-margin-bottom" name="message" placeholder="Write your message..." rows="5" required></textarea>
+
+    <button type="submit" class="w3-button w3-blue w3-padding-large w3-hover-opacity"><i class="fa fa-paper-plane"></i> Send Message</button>
+  </form>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-32">
+  <p>Hemalatha Sekar Portfolio | Built with ❤️ </p>
+</footer>
+
+<script>
+const words = [
+  "I build full-stack solutions 💻",
+  "I turn data into insights 📊",
+  "I train intelligent models 🤖",
+  "I design impactful dashboards 📈"
+];
+let i = 0, j = 0, current = '', isDeleting = false, speed = 100;
+function type() {
+  const el = document.getElementById("typewriter");
+  if (!el) return;
+  current = words[i];
+  el.innerHTML = current.substring(0, j);
+  if (!isDeleting && j++ === current.length) {
+    isDeleting = true;
+    setTimeout(type, 1500);
+  } else if (isDeleting && j-- === 0) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+    setTimeout(type, 500);
+  } else {
+    setTimeout(type, isDeleting ? 50 : 100);
+  }
+}
+document.addEventListener("DOMContentLoaded", type);
+</script>
+
 </body>
 </html>
